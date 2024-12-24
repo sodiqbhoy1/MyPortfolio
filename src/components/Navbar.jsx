@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-gradient-to-r from-purple-600 to-blue-600 p-5 fixed w-full top-0 z-50 shadow-lg">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo or Brand */}
-        <div className="text-white text-3xl font-extrabold tracking-wide shadow-md">
+        <div className="text-white text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-wide shadow-md">
           ADAMU BABA SODIQ
         </div>
 

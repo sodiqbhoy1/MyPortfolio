@@ -47,19 +47,19 @@ const Project = () => {
   ];
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section id='projects' className="bg-gray-50 py-16">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">My Projects</h2>
         <div className="relative border-l-4 border-blue-600">
           {projects.map((project, index) => (
-            <div key={index} className="flex items-center mb-8 ml-8 space-x-6">
+            <div key={index} className="flex flex-col sm:flex-row items-center mb-8 sm:mb-10 ml-0 sm:ml-8 space-y-4 sm:space-x-6 sm:space-y-0">
               {/* Thumbnail */}
               <img
                 src={project.image}
                 alt={project.title}
                 className="w-32 h-20 object-cover rounded-md shadow-lg"
               />
-              <div>
+              <div className="text-center sm:text-left">
                 {/* Project Title */}
                 <h3 className="text-xl font-semibold text-blue-900">{project.title}</h3>
                 {/* Project Description */}
@@ -74,7 +74,6 @@ const Project = () => {
                   View Project
                 </a>
                 <hr className="my-4 border-t-4 border-gray-300" />
-
               </div>
             </div>
           ))}
